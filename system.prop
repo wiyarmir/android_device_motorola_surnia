@@ -4,6 +4,12 @@ ro.sf.lcd_density=240
 com.qc.hardware=true
 debug.qc.hardware=true
 
+# Coniq additions
+
+persist.usb.serialno ConiqReader
+ro.secure=0
+persist.service.adb.enable=1
+
 # Rild
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
