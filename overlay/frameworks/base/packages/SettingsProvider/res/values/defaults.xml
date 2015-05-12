@@ -25,4 +25,14 @@
 
     <!-- 30 seconds for default screen timeout -->
     <integer name="def_screen_off_timeout">30000</integer>
+
+	<!-- Default for Settings.Global.DEVICE_NAME $1=MANUFACTURER $2=MODEL-->
+    <string name="def_device_name">Coniq %2$s</string>
+
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple">%1$s</string>
+	<!-- Lock down user into the initial APK -->
+	<bool name="def_user_setup_complete">false</bool>
+	<bool name="def_device_provisioned">false</bool>
+
 </resources>
