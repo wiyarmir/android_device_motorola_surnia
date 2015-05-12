@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc \
-    libstagefrighthw 
+    libstagefrighthw
 
 PRODUCT_PACKAGES += \
     wlan_module_symlink \
@@ -212,6 +212,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDEs += \
     media.stagefright.use-awesome=true
+
+# Coniq
+PRODUCT_PACKAGES += \
+	ConiqLauncher \
+	ConiqLauncherSwitcher \
+	ConiqScanner
+
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.usb.serialno=ConiqReader \
+	ro.secure=0 \
+	ro.adb.secure=0 \
+	ro.rommanager.developerid=wiyarmir \
+	persist.service.adb.enable=1 \
+	ro.build.display.id=Coniq\ Android\ Scanner
+
 
 # Inhert dalvik heap values from aosp
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
