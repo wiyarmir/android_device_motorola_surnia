@@ -226,7 +226,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.adb.secure=0 \
 	ro.rommanager.developerid=wiyarmir \
 	persist.service.adb.enable=1 \
-	ro.build.display.id=Coniq\ Android\ Scanner
+	ro.build.display.id=ConiqScanner
 
 
 # Inhert dalvik heap values from aosp
