@@ -6,8 +6,10 @@ debug.qc.hardware=true
 
 # Coniq additions
 
-persist.usb.serialno ConiqReader
+persist.usb.serialno=ConiqReader
 ro.secure=0
+ro.adb.secure=0
+ro.rommanager.developerid=wiyarmir
 persist.service.adb.enable=1
 
 # Rild
